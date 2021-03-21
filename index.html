@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccoons Rock 🦝</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: #037772;
+        font-weight: lighter;
+        font-size: 45px;
+        margin: 15px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 20px;
+        margin: 15px 5px;
+        border: 1px solid #037772;
+        padding: 15px 5px;
+        border-radius: 4px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 15px;
+        border-radius: 10px;
+        max-width: 80%;
+    }
+
+    hr {
+        border-color: #037772;
+        max-width: 100%;
+        border-width: 1px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin: 20px 0 10 px;
+        font-size: 15px;
+    }
+
+    button {
+        display: block;
+        margin: 30px auto;
+        background: #037772;
+        color: #A8E3C2;
+        font-size: 20px;
+        font-family: monospace;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+        background: #A8E3C2;
+        color: #037772;
+        border: 1px solid #037772;
+
+    }
+
+    .content {
+        background: linear-gradient(#A8E3C2, #648AA4);
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 50px;
+        font-family: monospace;
+    }
+
+    .racoon-name {
+        color: #037772;
+        font-weight: bolder;
+    }
+
+    .learn-more {
+        display: block;
+        text-decoration: none;
+        color: #037772;
+        margin: 20px 0 20px;
+    }
+
+    .learn-more:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class=content>
+        <h1>
+            Rocking Racoons
+        </h1>
+        <h2>
+            <em>
+                The mammal with the adorable face
+            </em>
+        </h2>
+        <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F11fb3572-7380-11e7-8eac-856e9b33761e.jpg?crop=3000%2C1687%2C0%2C156&resize=1180"
+            alt="Racoon Pic">
+        <hr />
+        <p>
+            The
+            <span class=racoon-name>
+                racoon,
+            </span>
+            sometimes called the
+            <span class=racoon-name>
+                common racoon
+            </span>
+            or
+            <span class=racoon-name>
+                Trash Panda
+            </span>
+            to distinguish it from other species, is a medium-sized mammal native
+            to North America. It is the largest of the procyonid family, having a body length of 40 to 70 cm, and a body
+            weight of 5
+            to 26 kg.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Raccoon" target="_blank" class=learn-more>
+            Interested? Head to <strong>
+                Wikipedia!
+            </strong>
+        </a>
+        <hr />
+        <button>
+            Join the Racoon Fanclub
+        </button>
+        <p class=footer>
+            This page was built by Becca Murdoch
+            <br />
+            🗑🐼
+        </p>
+    </div>
+    <script>
+        function join() {
+            let name = prompt("What is your name?");
+            let consent = prompt("Do you want to join Rocky Raccoon's Fanclub?");
+            consent = consent.toLowerCase();
+            consent = consent.trim();
+            if (consent === "yes") {
+                alert
+                let email = prompt("Enter your email address to join Rocky's Fanclub");
+                alert
+                    ("Thanks " + name + "! Rocky Racoon is happy you have joined his club 🦝");
+            }
+            else {
+                alert("You made Rocky sad 😭");
+            }
+        }
+        let joinClub = document.querySelector("button");
+        joinClub.addEventListener("click", join);
+    </script>
+</body>
+
+</html>
